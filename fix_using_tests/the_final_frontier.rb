@@ -12,7 +12,7 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  crew.map {|crew_member| "Hello #{crew_member}."} #each returns the original array so need map here
 end
 
 def engage
